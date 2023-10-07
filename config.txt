@@ -1,4 +1,13 @@
 Host gitlab.crja72.ru  
  HostName gitlab.crja72.ru  
- User git    
- IdentityFile C:\Users\xiaomi\.shh\some_key_name
+ User git    gi
+ IdentityFile C:\Users\xiaomi\.ssh\some_key_name
+ssh-keygen -t rsa -f C:/Users/xiaomi/.ssh/sshkey -C user_name -b 2048
+ssh-keygen -t rsa -f ~/.ssh/some_key_name -C user_name -b 2048
+ssh-keygen -t rsa -f C:\Users\xiaomi\.ssh\some_key_name -C user_name -b 2048
+ssh-keygen -t rsa -f C:Usersxiaomi.shhsome_key_name -C user_name -b 2048
+git clone -c "core.sshCommand=ssh -i C:/Users/xiaomi/.ssh/sshkey -o IdentitiesOnly=yes -o StrictHostKeyChecking=no" git@gitlab.crja72.ru:django_2023/students/46150-maksimkosoyan-47229.git
+ssh-add C:/Users/xiaomi/.ssh/sshkey
+git clone git@gitlab.crja72.ru:django_2023/students/46150-maksimkosoyan-47229.git
+git clone -c "core.sshCommand=ssh -i C:/Users/xiaomi/.ssh/sshkey -o IdentitiesOnly=yes -o StrictHostKeyChecking=no" [git@gitlab.crja72.ru](<mailto:git@gitlab.crja72.ru>):django_2023/students/46150-maksimkosoyan-47229.git
+git clone -c "core.sshCommand=ssh -i ~/.ssh/sshkey -o IdentitiesOnly=yes -o StrictHostKeyChecking=no" git@gitlab.crja72.ru:django_2023/students/git@gitlab.crja72.ru:django_2023/students/46150-maksimkosoyan-47229.git
