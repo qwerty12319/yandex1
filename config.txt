@@ -1,0 +1,4 @@
+Host gitlab.crja72.ru  
+ HostName gitlab.crja72.ru  
+ User git    
+ IdentityFile C:\Users\xiaomi\.shh\some_key_name
